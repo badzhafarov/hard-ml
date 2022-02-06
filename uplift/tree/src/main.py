@@ -127,19 +127,7 @@ if __name__ == '__main__':
     path = 'data'
     X = np.load(f'{path}/example_X.npy')
     y = np.load(f'{path}/example_y.npy')
-    # print(get_thresholds(X[:,0]))
-    # print('//', X[:,0].shape)
     treatment = np.load(f'{path}/example_treatment.npy')
     regressor = UpliftTreeRegressor()
     regressor.fit(X, treatment, y)
     predicts = regressor.predict(X)
-    gt = np.load('/Users/badzhafarov/Downloads/example_preds.npy')
-    # print(gt)
-    # from collections import Counter
-    # print(Counter(predicts))
-    # print(Counter(gt))
-    # print('___', gt.shape, predicts.shape)
-    #
-    # print(X.shape)
-    # z = regressor._best_split(X, treatment, y)
-    # print(z)
