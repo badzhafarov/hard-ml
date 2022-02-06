@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "uplift_tree"
+name = "tree"
 version = "0.1.0"
 description = ""
 authors = ["Bakhruz Dzhafarov <badzhafarov@yandex.ru>"]
